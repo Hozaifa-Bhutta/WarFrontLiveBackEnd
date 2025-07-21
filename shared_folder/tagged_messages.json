@@ -5,10 +5,7 @@
         "channel": "gazaalanpa",
         "date": "2025-07-20T20:00:10+00:00",
         "locations": [
-            "Al-Asdekaa Cafeteria",
-            "Mawasi",
-            "Khan Yunis",
-            "Southern Gaza Strip"
+            "Al-Asdekaa Cafeteria Mawasi Khan Yunis Southern Gaza Strip"
         ]
     },
     {
@@ -17,7 +14,7 @@
         "channel": "gazaalanpa",
         "date": "2025-07-20T19:59:58+00:00",
         "locations": [
-            "Deir Al-Balah"
+            "Deir Al-Balah Central Gaza Strip"
         ]
     },
     {
@@ -53,7 +50,7 @@
         "channel": "gazaalanpa",
         "date": "2025-07-20T19:43:30+00:00",
         "locations": [
-            "Zikim Checkpoint"
+            "Zikim Checkpoint Gaza Strip"
         ]
     },
     {
@@ -62,9 +59,7 @@
         "channel": "abuobaidahenglish",
         "date": "2025-07-20T13:58:47+00:00",
         "locations": [
-            "Al-Radwan Mosque",
-            "Shuja'Iyya Neighborhood",
-            "East Gaza City"
+            "Shuja'Iyya Neighborhood Gaza City"
         ]
     },
     {
@@ -73,9 +68,7 @@
         "channel": "abuobaidahenglish",
         "date": "2025-07-20T10:35:23+00:00",
         "locations": [
-            "Al-Ridwan Mosque",
-            "Al-Shujaiya Neighborhood",
-            "East Gaza City"
+            "Al-Ridwan Mosque Al-Shujaiya Neighborhood Gaza City"
         ]
     },
     {
@@ -84,8 +77,7 @@
         "channel": "idfofficial",
         "date": "2025-07-20T16:18:34+00:00",
         "locations": [
-            "Khan Yunis",
-            "Gaza Strip"
+            "Khan Yunis Gaza Strip"
         ]
     },
     {
@@ -103,14 +95,9 @@
         "cleaned_text": "IDF issued evacuation warnings for residents in Deir al-Balah.",
         "channel": "the_jerusalem_post",
         "date": "2025-07-20T06:32:28+00:00",
-        "locations": []
-    },
-    {
-        "text": "In Gaza, there is no description for what is happening of hunger, bombing, and death. The pens have been lifted, and the papers have dried.",
-        "cleaned_text": "No relevant operational information.",
-        "channel": "gazaalanpa",
-        "date": "2025-07-21T18:35:47+00:00",
-        "locations": []
+        "locations": [
+            "Deir Al-Balah"
+        ]
     },
     {
         "text": "6 martyrs and a number of wounded as a result of the occupation's bombing of displaced people in the fishermen's port, west of Gaza City.",
@@ -118,7 +105,7 @@
         "channel": "gazaalanpa",
         "date": "2025-07-21T14:54:42+00:00",
         "locations": [
-            "West Gaza City"
+            "Fishermen'S Port Gaza City"
         ]
     },
     {
@@ -126,7 +113,9 @@
         "cleaned_text": "IDF reported sirens sounded in Nir Am.",
         "channel": "idfofficial",
         "date": "2025-07-21T15:38:44+00:00",
-        "locations": []
+        "locations": [
+            "Nir Am"
+        ]
     },
     {
         "text": "IDF: The IDF Struck Military Targets Belonging to the Houthi Terrorist Regime at the Hudaydah Port The IDF struck and dismantled military infrastructure belonging to the Houthi terrorist regime at the Hudaydah port. Among the military infrastructure struck were engineering vehicles used to reestablish the port's infrastructure, fuel containers, naval vessels used for military activities and force against the State of Israel and vessels in the maritime zone adjacent to the port, and additional terror infrastructure used by the Houthi terrorist regime. The port has been used, among other things, to transfer weapons from the Iranian regime, which are then used by the Houthi terrorist regime to execute terrorist attacks against the State of Israel and its allies. The IDF has identified the continuous efforts and actions of the Houthi terrorist regime to reestablish terrorist infrastructure at the port, and as such, the components used to advance these efforts were struck. The Houthi terrorist regime exploits the maritime zone for the use of force and to carry out terrorist attacks against passing vessels and global maritime trade. The targets struck demonstrate how the Houthi terrorist regime utilizes civilian infrastructure for military and terrorist purposes. The IDF will operate decisively against the repeated attacks of the Houthi terrorist regime against Israeli civilians, and remains determined to continue operating against any threat posed to the civilians of the State of Israel, wherever it is required.",
@@ -152,9 +141,7 @@
         "channel": "PalestineResist",
         "date": "2025-07-21T12:14:49+00:00",
         "locations": [
-            "Abu Youssef Al-Najjar Hospital",
-            "Red Cross Field Hospital",
-            "Southern Gaza"
+            "Red Cross Field Hospital Southern Gaza"
         ]
     },
     {

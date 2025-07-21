@@ -1,46 +1,57 @@
 import json
 import re
+
 from call_llm import call_llm
 
 def extract_relevant_locations_llm(text):
     """Extract locations directly involved in violent attacks using LLM."""
-    system_prompt = """You are a location extraction assistant for a conflict intelligence mapping system. Your job is to identify and extract ONLY the physical locations that are directly involved in violent attacks, military operations, or conflict events mentioned in the message.
+    system_prompt = """You are a location‑extraction assistant for a conflict‑intelligence mapping system.
+Your job is to return one combined, geocodable location for each distinct violent event described, using exactly the place names as they appear in the text. If the message describes multiple events in different places, return each combined location separated by commas.
 
-Your output must:
-- Extract ONLY locations where violent events (attacks, strikes, bombings, fighting, etc.) are taking place
-- Provide cleaned-up, geocodable location names that would work with mapping services
-- Include specific landmarks, facilities, or districts when mentioned along with cities
-- Return locations in a simple comma-separated list format
-- Return "NONE" if no relevant locations are found
+Output format:
+  Location1, Location2, …
 
-Important criteria:
-- ONLY include locations where violent events are happening
-- Include cities, neighborhoods, buildings, landmarks, crossings, facilities directly involved in conflict
-- Exclude locations mentioned only in passing or for context
-- Exclude political groups, organizations, people, military units
-- Format as: "Location1, Location2, Location3" (no quotes, no explanations)
+Where each Location is formatted by concatenating, in order and separated by spaces, only those components that appear in the message:
+  [Site_or_Landmark] [Neighborhood_or_City] [Region_or_City_or_Country]
+
+Rules:
+1. Include **only** the place names explicitly mentioned in the text—and only those.  
+2. If the text names a region or city alongside a specific site, include it.  
+   - E.g. “Zikim checkpoint, north of the Gaza Strip” → `Zikim checkpoint Gaza Strip`  
+3. If multiple distinct events occur at different mentioned locations, separate them with commas.  
+4. Do **not** invent or infer additional places beyond what’s named.  
 
 Examples:
 
-Message: "Airstrikes reported in Gaza City targeting residential buildings near Al-Shifa Hospital."
-Output: Gaza City, Al-Shifa Hospital
+Message:  
+  “Wounded by shelling of the vicinity of Al‑Asdekaa Cafeteria in Mawasi, Khan Yunis, southern Gaza Strip.”  
+Output:  
+  Al‑Asdekaa Cafeteria Mawasi Khan Yunis southern Gaza Strip
 
-Message: "Heavy fighting continues around the Erez Crossing in northern Gaza."
-Output: Erez Crossing
+Message:  
+  “Breaking: an Israeli bulldozer is running over bodies at the Zikim checkpoint, north of the Gaza Strip.”  
+Output:  
+  Zikim checkpoint Gaza Strip
 
-Message: "The AlMuhand Hall in Khan Younis was hit by an airstrike."
-Output: AlMuhand Hall Khan Younis
+Message:  
+  “IDF struck sites in Jabaliya and later in Khan Yunis.”  
+Output:  
+  Jabaliya, Khan Yunis
 
-Message: "Hamas announced they will continue resistance operations from Gaza."
-Output: NONE
-
-Message: "IDF forces are stationed near the border but no operations reported."
-Output: NONE"""
-    
-    user_prompt = f"""Extract ONLY the physical locations directly involved in violent attacks or conflict events from this message.
+Message:  
+  “Violent Zionist bombing of the Gaza Strip now.”  
+Output:  
+  Gaza Strip
+"""
+    user_prompt = f"""For each violent event in this message, extract one combined location string by concatenating only the place names that appear verbatim in the text (site, neighborhood/city, region/country) with spaces between them.  
+There may be more than one event: return multiple combined locations separated by commas.  
+Each location must be specific enough to be found by the Google Maps API—so if a named site is too granular, only include it when paired with its named city, region, or country.
 
 Message: "{text}"
 Output:"""
+
+
+
 
     print(f"Extracting relevant locations from: '{text[:100]}...'")
     try:
