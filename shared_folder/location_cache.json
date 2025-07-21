@@ -1,0 +1,44 @@
+{
+  "al-asdekaa cafeteria in mawasi, khan yunis, southern gaza strip": {
+    "lat": 31.3462005,
+    "lon": 34.3039986
+  },
+  "al-radwan mosque in shuja'iyya neighborhood, east of gaza city, using thaqib": {
+    "lat": 31.5009022,
+    "lon": 34.4705065
+  },
+  "al-ridwan mosque in al-shujaiya neighborhood, east of gaza city": {
+    "lat": 31.5009022,
+    "lon": 34.4705065
+  },
+  "deir al-balah": {
+    "lat": 31.417139,
+    "lon": 34.350931
+  },
+  "deir al-balah in central gaza strip": {
+    "south": 31.38483,
+    "north": 31.4319439,
+    "west": 34.3106085,
+    "east": 34.3933351
+  },
+  "gaza": {
+    "lat": 31.5016951,
+    "lon": 34.4668445
+  },
+  "gaza strip": {
+    "south": 31.2196903,
+    "north": 31.6008014,
+    "west": 34.21010010000001,
+    "east": 34.5672855
+  },
+  "gaza strip. idf troops expanded ground activities in jabaliya": null,
+  "khan yunis, gaza strip": {
+    "lat": 31.3462005,
+    "lon": 34.3039986
+  },
+  "shawaaz": null,
+  "zikim checkpoint north of gaza strip": {
+    "lat": 31.607204,
+    "lon": 34.520968
+  }
+}
