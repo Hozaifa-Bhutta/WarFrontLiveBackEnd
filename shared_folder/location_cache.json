@@ -1,44 +1,78 @@
 {
-  "al-asdekaa cafeteria in mawasi, khan yunis, southern gaza strip": {
-    "lat": 31.3462005,
-    "lon": 34.3039986
-  },
-  "al-radwan mosque in shuja'iyya neighborhood, east of gaza city, using thaqib": {
-    "lat": 31.5009022,
-    "lon": 34.4705065
-  },
-  "al-ridwan mosque in al-shujaiya neighborhood, east of gaza city": {
-    "lat": 31.5009022,
-    "lon": 34.4705065
-  },
-  "deir al-balah": {
-    "lat": 31.417139,
-    "lon": 34.350931
-  },
-  "deir al-balah in central gaza strip": {
-    "south": 31.38483,
-    "north": 31.4319439,
-    "west": 34.3106085,
-    "east": 34.3933351
-  },
-  "gaza": {
-    "lat": 31.5016951,
-    "lon": 34.4668445
-  },
-  "gaza strip": {
-    "south": 31.2196903,
-    "north": 31.6008014,
-    "west": 34.21010010000001,
-    "east": 34.5672855
-  },
-  "gaza strip. idf troops expanded ground activities in jabaliya": null,
-  "khan yunis, gaza strip": {
-    "lat": 31.3462005,
-    "lon": 34.3039986
-  },
-  "shawaaz": null,
-  "zikim checkpoint north of gaza strip": {
-    "lat": 31.607204,
-    "lon": 34.520968
-  }
+    "al-asdekaa cafeteria": null,
+    "mawasi": {
+        "lat": 31.348415,
+        "lon": 34.256136
+    },
+    "khan yunis": {
+        "lat": 31.3462005,
+        "lon": 34.3039986
+    },
+    "southern gaza strip": {
+        "south": 31.2196903,
+        "north": 31.6008014,
+        "west": 34.21010010000001,
+        "east": 34.5672855
+    },
+    "deir al-balah": {
+        "lat": 31.417139,
+        "lon": 34.350931
+    },
+    "gaza strip": {
+        "south": 31.2196903,
+        "north": 31.6008014,
+        "west": 34.21010010000001,
+        "east": 34.5672855
+    },
+    "gaza": {
+        "lat": 31.5016951,
+        "lon": 34.4668445
+    },
+    "zikim checkpoint": {
+        "lat": 31.607204,
+        "lon": 34.520968
+    },
+    "al-radwan mosque": {
+        "lat": 30.0697428,
+        "lon": 31.2022218
+    },
+    "shuja'iyya neighborhood": {
+        "lat": 31.5009022,
+        "lon": 34.4705065
+    },
+    "east gaza city": {
+        "lat": 31.5016951,
+        "lon": 34.4668445
+    },
+    "al-ridwan mosque": {
+        "lat": 23.5868321,
+        "lon": 58.4409939
+    },
+    "al-shujaiya neighborhood": null,
+    "jabaliya": {
+        "lat": 31.529396,
+        "lon": 34.479741
+    },
+    "west gaza city": {
+        "lat": 31.5016951,
+        "lon": 34.4668445
+    },
+    "hudaydah port": {
+        "lat": 14.8320112,
+        "lon": 42.9370346
+    },
+    "abu youssef al-najjar hospital rafah": {
+        "lat": 31.29677999999999,
+        "lon": 34.243482
+    },
+    "abu youssef al-najjar hospital": null,
+    "red cross field hospital": null,
+    "southern gaza": {
+        "lat": 31.5016951,
+        "lon": 34.4668445
+    },
+    "beit hanun": {
+        "lat": 31.538483,
+        "lon": 34.53677
+    }
 }
