@@ -1,7 +1,11 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
+
 import json
 
 app = Flask(__name__) # this line initializes the Flask application
+CORS(app)
+
 @app.route("/tagged_messages.json")
 def get_tagged_messages():
     with open("shared_folder/tagged_messages.json", "r") as tagged_file:
