@@ -1,124 +1,62 @@
 {
-    "al-asdekaa cafeteria mawasi gaza strip": {
-        "lat": 31.348415,
-        "lon": 34.256136
+    "yemen": {
+        "east": 54.67899999999999,
+        "west": 41.5,
+        "north": 18.9998776,
+        "south": 11.7975
     },
-    "central gaza strip": {
-        "south": 31.2196903,
-        "north": 31.6008014,
-        "west": 34.21010010000001,
-        "east": 34.5672855
+    "khan yunis": {
+        "lat": 31.3462005,
+        "lon": 34.3039986
+    },
+    "southern khan yunis": {
+        "lat": 31.3462005,
+        "lon": 34.3039986
     },
     "gaza strip": {
-        "south": 31.2196903,
-        "north": 31.6008014,
+        "east": 34.5672855,
         "west": 34.21010010000001,
-        "east": 34.5672855
-    },
-    "zikim checkpoint gaza strip": {
-        "south": 31.2196903,
         "north": 31.6008014,
-        "west": 34.21010010000001,
-        "east": 34.5672855
+        "south": 31.2196903
     },
-    "al-radwan mosque shuja'iyya gaza city": {
+    "northern gaza strip": {
+        "east": 34.5672855,
+        "west": 34.21010010000001,
+        "north": 31.6008014,
+        "south": 31.2196903
+    },
+    "abasan al-kabira": {
+        "lat": 31.323126,
+        "lon": 34.34402499999999
+    },
+    "southern gaza strip": {
+        "east": 34.5672855,
+        "west": 34.21010010000001,
+        "north": 31.6008014,
+        "south": 31.2196903
+    },
+    "hebron": {
+        "lat": 31.532569,
+        "lon": 35.09982600000001
+    },
+    "shejaiya": {
         "lat": 31.5009022,
         "lon": 34.4705065
     },
-    "al-ridwan mosque al-shujaiya gaza city": {
-        "lat": 31.5009022,
-        "lon": 34.4705065
-    },
-    "deir al-balah gaza strip": {
-        "south": 31.3738548,
-        "north": 31.4664844,
-        "west": 34.3106085,
-        "east": 34.4265248
-    },
-    "no relevant operational information.": null,
-    "fishermen's port gaza city gaza strip": {
-        "lat": 31.5016951,
-        "lon": 34.4668445
-    },
-    "nir am": {
-        "south": 31.5165291,
-        "north": 31.523954,
-        "west": 34.568831,
-        "east": 34.5854959
-    },
-    "hudaydah port hudaydah": {
-        "lat": 14.8320112,
-        "lon": 42.9370346
-    },
-    "abu youssef al-najjar hospital rafah gaza strip": {
-        "lat": 31.29677999999999,
-        "lon": 34.243482
-    },
-    "abu youssef al-najjar hospital gaza strip": {
-        "south": 31.2196903,
-        "north": 31.6008014,
-        "west": 34.21010010000001,
-        "east": 34.5672855
-    },
-    "red cross field hospital gaza strip": {
-        "south": 31.2196903,
-        "north": 31.6008014,
-        "west": 34.21010010000001,
-        "east": 34.5672855
-    },
-    "beit hanun gaza strip": {
+    "beit hanoun": {
         "lat": 31.538483,
         "lon": 34.53677
     },
-    "al-asdekaa cafeteria mawasi khan yunis southern gaza strip": {
-        "lat": 31.3462005,
-        "lon": 34.3039986
+    "'abasan al kabira": {
+        "lat": 31.323126,
+        "lon": 34.34402499999999
     },
-    "deir al-balah central gaza strip": {
-        "south": 31.38483,
-        "north": 31.4319439,
-        "west": 34.3106085,
-        "east": 34.3933351
-    },
-    "gaza": {
-        "lat": 31.5016951,
-        "lon": 34.4668445
-    },
-    "shuja'iyya neighborhood gaza city": {
-        "lat": 31.5009022,
-        "lon": 34.4705065
-    },
-    "al-ridwan mosque al-shujaiya neighborhood gaza city": {
-        "lat": 31.5009022,
-        "lon": 34.4705065
-    },
-    "khan yunis gaza strip": {
-        "lat": 31.3462005,
-        "lon": 34.3039986
-    },
-    "jabaliya": {
+    "east jabalia": {
         "lat": 31.529396,
         "lon": 34.479741
     },
-    "deir al-balah": {
-        "lat": 31.417139,
-        "lon": 34.350931
-    },
-    "fishermen's port gaza city": null,
-    "hudaydah port": {
-        "lat": 14.8320112,
-        "lon": 42.9370346
-    },
-    "abu youssef al-najjar hospital rafah": {
-        "lat": 31.29677999999999,
-        "lon": 34.243482
-    },
-    "red cross field hospital southern gaza": {
-        "lat": 31.5016951,
-        "lon": 34.4668445
-    },
-    "beit hanun": {
-        "lat": 31.538483,
-        "lon": 34.53677
+    "east khan yunis": {
+        "lat": 31.3462005,
+        "lon": 34.3039986
     }
 }

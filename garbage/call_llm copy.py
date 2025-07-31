@@ -6,6 +6,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
 # MODEL = "mistralai/mistral-small-3.2-24b-instruct:free"  # example free model
 MODEL = "mistral-saba-24b"
 tokens_remaining = 6000
@@ -14,7 +15,7 @@ tokens_reset = 30
 def call_llm(user_prompt, system_prompt, temperature=0.2, max_tokens=1024):
     global tokens_remaining 
     global tokens_reset
-    if tokens_remaining < len((user_prompt+system_prompt).split(" "))*1.5:
+    if tokens_remaining < len((user_prompt+system_prompt).split(" "))*2:
         print(f"Waiting for {tokens_reset} seconds for llm")
         time.sleep(tokens_reset+1) # wait until all tokens are reset
     url = "https://api.groq.com/openai/v1/chat/completions"

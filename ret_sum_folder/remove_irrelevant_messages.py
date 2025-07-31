@@ -1,6 +1,6 @@
 
 
-from call_llm import call_llm
+from ret_sum_folder.call_llm import call_llm
 
 def remove_irrelevant_messages(messages):
     """ Remove messages that are not relevant for clustering using LLM. """
