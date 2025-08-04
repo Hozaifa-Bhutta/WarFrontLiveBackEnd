@@ -72,25 +72,22 @@
         "east": 34.324978860922194,
         "west": 34.303961139077806
     },
-    "Zikim": {
-        "lat": "31.60681",
-        "lon": "34.52154"
-    },
+    "Zikim": null,
     "north Gaza": {
         "north": 31.584649192240228,
         "south": 31.50161,
         "east": 34.56419902755833,
         "west": 34.36924097244167
     },
-    "Moraj": null,
-    "Nazareth School": null,
-    "Baghdad Street": {
-        "lat": "35.92597",
-        "lon": "36.63795"
+    "Moraj": {
+        "lat": "31.3186457",
+        "lon": "34.3127962"
     },
+    "Nazareth School": null,
+    "Baghdad Street": null,
     "Al-Shujaiya": {
-        "lat": "13.25",
-        "lon": "44.08333"
+        "lat": "31.5004734",
+        "lon": "34.4782627"
     },
     "east Gaza City": {
         "north": 31.584649192240228,
