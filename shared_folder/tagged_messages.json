@@ -5,6 +5,7 @@
         "date": "2025-07-28T23:03:37+00:00",
         "cleaned_text": "Zionist occupation forces are launching airstrikes at Haidar Abdel Shafi roundabout in western Gaza City.",
         "locations": [
+            "Haidar Abdel Shafi",
             "west Gaza City"
         ]
     },
@@ -35,6 +36,7 @@
         "date": "2025-07-26T18:53:18+00:00",
         "cleaned_text": "Al-Qassam and Al-Quds Brigades fighters shelled an enemy command and control site near a courts complex south of Khan Younis city in the southern Gaza Strip using several mortar shells.",
         "locations": [
+            "south Khan Younis",
             "south Gaza Strip"
         ]
     },
@@ -80,7 +82,8 @@
         "date": "2025-08-03T13:44:03+00:00",
         "cleaned_text": "IDF intercepted a suspicious aerial target launched from Yemen over Bnei Netzarim after sirens alerted of hostile aircraft infiltration. The IAF was involved in the interception process.",
         "locations": [
-            "Yemen"
+            "Yemen",
+            "Bnei Netzarim"
         ]
     },
     {
@@ -127,6 +130,7 @@
         "cleaned_text": "Al-Qassam fighters and Al-Quds Brigades cooperated to shell an enemy command site in the Moraj axis south of Khan Younis city in the southern Gaza Strip using mortar shells.",
         "locations": [
             "Moraj",
+            "south Khan Younis",
             "south Gaza Strip"
         ]
     },
@@ -136,6 +140,8 @@
         "date": "2025-07-31T11:40:07+00:00",
         "cleaned_text": "Al-Qassam fighters sniped and injured two Israeli soldiers near Nazareth School on Baghdad Street in the Al-Shujaiya neighborhood east of Gaza City on 10-07-2025.",
         "locations": [
+            "Nazareth School",
+            "Baghdad Street",
             "Al-Shujaiya",
             "east Gaza City"
         ]
@@ -146,6 +152,7 @@
         "date": "2025-07-31T06:58:25+00:00",
         "cleaned_text": "Al-Qassam Brigades shelled a gathering of enemy soldiers and vehicles with mortar shells in the Qarara area, east of Khan Yunis city, south of the Gaza Strip.",
         "locations": [
+            "Qarara",
             "east Khan Yunis",
             "south Gaza Strip"
         ]
@@ -174,6 +181,8 @@
         "channel": "the_jerusalem_post",
         "date": "2025-07-30T12:06:30+00:00",
         "cleaned_text": "A 15-year-old was shot in the back after a reservist fired at stone-throwers near the evacuated Tzur Harel outpost. The teenager is conscious, and military and police are investigating.",
-        "locations": []
+        "locations": [
+            "Tzur Harel"
+        ]
     }
 ]
