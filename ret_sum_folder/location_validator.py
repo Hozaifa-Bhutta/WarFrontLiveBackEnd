@@ -14,7 +14,7 @@ SPECIFIC_SITE_KEYWORDS = {
     'house', 'home', 'residence', 'apartment', 'farm', 'factory', 'warehouse',
     'ministry', 'embassy', 'courthouse', 'police', 'prison', 'barracks', 'office',
     'street', 'road', 'junction', 'roundabout', 'square', 'bridge', 'airport',
-    'facility', 'plant', 'refuge', 'shelter', 'hotel', 'court'
+    'facility', 'plant', 'refuge', 'shelter', 'hotel', 'court', 'courts'
 
     # small cities and towns
     'khan yunis'
@@ -67,60 +67,30 @@ def search_maps(location_name):
         print(f"Google Maps API network error: {e}")
         return None, None
 
-def validate_match(original_query, google_name, original_message):
+def validate_match(original_query, google_name):
     """
     A single, unified LLM call to validate if the Google result is a good match.
     """
-    system_prompt = """
-        You are a location validation expert for a conflict map. Your job is to determine
-        if a Google Maps result accurately represents the specific location from a text.
-
-        RULES:
-        1.  **Exact or reasonable variations are GOOD.** This includes common spelling/transliteration differences (e.g., Beirut vs. Bayrut).
-        2.  **Specific Site Rule:** If the original query mentions a specific site (hospital, checkpoint, etc.),
-            the Google result MUST also refer to that specific site. A match with only the surrounding city is a **BAD** match.
-        3.  **Core Location Rule:** A match is **GOOD** if the Google result correctly identifies the most specific place in the query, even if it drops redundant descriptors ('City', 'North') or regional context ('Gaza Strip'). However, a match is **BAD** if it's a completely different level of specificity (e.g., a query for a city that results in the whole country).
-
-        Respond with only "GOOD" or "BAD".
-
-        Examples:
-        ---
-        - Original message: "The Jabalia City area in the North Gaza Strip was targeted."
-        - Original search query: "Jabalia City North Gaza Strip"
-        - Google Maps result: "Jabalia"
-        Decision: GOOD
-        ---
-        - Original message: "Shelling hit the Al-Shifa Hospital in Gaza City."
-        - Original search query: "Al-Shifa Hospital Gaza"
-        - Google Maps result: "Gaza"
-        Decision: BAD
-        ---
-        - Original message: "The incident took place in southern Gaza."
-        - Original search query: "southern Gaza"
-        - Google Maps result: "Khan Yunis"
-        Decision: BAD
-        ---
-        - Original message: "Reports from Beirut, Lebanon."
-        - Original search query: "Beirut, Lebanon"
-        - Google Maps result: "Bayrut, Lebanon"
-        Decision: GOOD
-        ---
-        - Original message: "Troops are operating in the Khan Yunis area of the Gaza Strip."
-        - Original search query: "Khan Yunis Gaza"
-        - Google Maps result: "Khan Yunis"
-        Decision: GOOD
-        """
     user_prompt = f"""
-    - Original message: "{original_message}"
-    - Original search query: "{original_query}"
-    - Google Maps result: "{google_name}"
+Do '{original_query}' and '{google_name}' refer to the exact same physical location?
 
-    Decision:
-    """
+First, respond ONLY with 'GOOD' or 'BAD' on the first line:
+- 'GOOD' means the phrases describe the *exact* same location — the same city, town, village, or named neighborhood.
+- 'BAD' means one is a sub-region of the other, or they are nearby but different in size or scope.
+
+Second, explain your reasoning in 1-2 sentences.
+
+IMPORTANT: If your explanation includes phrases like “part of,” “within,” “smaller area,” “sub-region,” or “specific area of,” your answer must be 'BAD'. This rule must always be followed.
+"""
     try:
-        result = call_llm(user_prompt, system_prompt, temperature=0.1, max_tokens=10)
+        result = call_llm(user_prompt, temperature=0, max_tokens=5000)
         print(f"Validation result: {result.strip()}")
-        return "GOOD" in result.upper()
+        if "GOOD" in result.upper():
+            print(f" GOOD ")
+            return True
+        else:
+            print(f" BAD ")
+            return False
     except Exception as e:
         print(f"Error in LLM location validation: {e}")
         return False
@@ -129,32 +99,12 @@ def refine_location_query(original_query, original_message, google_result_name):
     """
     Use LLM to suggest a refined, less specific query for better geocoding.
     """
-    system_prompt = """You are a geographic query refinement expert. Your job is to take a failed location search and suggest a slightly broader, more geocodable alternative that still represents the same general area.
-
-RULES:
-1. Make the query slightly less specific but still geographically relevant
-2. Remove overly specific details that might prevent geocoding
-3. Keep the core geographic area intact
-4. If the original mentions a specific site (hospital, checkpoint, etc.), try removing some of the words and describe the next most specific area that is likely to be found by Google Maps
-5. For neighborhoods or districts, try the parent city
-
-Examples:
-- "Netzarim corridor Shuja'iyya Daraj Tuffah Beit Hanoun Gaza Strip" → "Beit Hanoun"
-- "Haidar Abdel Shafi Roundabout, Gaza City" → "Gaza City"
-- "East of Khan Younis, near the agricultural school" → "Khan Younis"
 
 
-Return only the refined query string, nothing else."""
-
-    user_prompt = f"""
-Original failed query: "{original_query}"
-Google found: "{google_result_name}"
-Original message context: "{original_message}"
-
-Suggest a refined query:"""
+    user_prompt = f"'{original_query}' did not yield a good google map result. Whats an alternative location name that could lead to a better result but refers to the same place? Output only the refined query, without any explanation or addtional text."
 
     try:
-        refined = call_llm(user_prompt, system_prompt, temperature=0.2, max_tokens=30)
+        refined = call_llm(user_prompt, temperature=0.2, max_tokens=30)
         if refined:
             return refined.strip().strip('"').strip("'")
         return None
@@ -174,7 +124,8 @@ def is_too_vague(original_query, validated_location):
     
     # Check if validated result is overly broad
     is_overly_broad = any(broad_area in validated_lower for broad_area in OVERLY_BROAD_AREAS)
-    
+    print(has_specific_site, is_overly_broad)
+    print(original_lower, validated_lower)
     # If original had specific site but result is overly broad, it's too vague
     if has_specific_site and is_overly_broad:
         return True
@@ -188,7 +139,7 @@ def search_and_validate(query, original_message):
     # --- Primary Attempt (Step 2) ---
     google_result, google_name = search_maps(query)
     print(f"Searching for: {query} → Google result: {google_name}")
-    if google_result and validate_match(query, google_name, original_message):
+    if google_result and validate_match(query, google_name):
         return google_name
     print("Not validated in primary search, trying fallback...")
 
@@ -197,11 +148,14 @@ def search_and_validate(query, original_message):
     if refined_query and refined_query.lower() != query.lower():
         refined_result, refined_name = search_maps(refined_query)
         print(f"Searching for refined query: {refined_query} → Google result: {refined_name}")
-        if refined_result and validate_match(refined_query, refined_name, original_message):
+        if refined_result and validate_match(refined_query, refined_name):
             if not is_too_vague(query, refined_name):
+                print("location is not too vague, returning refined name")
                 return refined_name
             else:
                 print(f"✗ Refined result '{refined_name}' is too vague")
+        else:
+            print("Refined search did not yield a valid result, trying programmatic fallback...")
 
     # --- Programmatic Fallback Attempt (Step 4) ---
     query_parts = query.split()
@@ -211,7 +165,7 @@ def search_and_validate(query, original_message):
             print(f"Trying fallback: '{fallback_query}'")
             fallback_result, fallback_name = search_maps(fallback_query)
             print(f"Fallback search result: {fallback_name}")
-            if fallback_result and validate_match(fallback_query, fallback_name, original_message):
+            if fallback_result and validate_match(fallback_query, fallback_name):
                 if not is_too_vague(query, fallback_name):
                     return fallback_name
                 else:

@@ -1,77 +1,141 @@
 [
     {
         "text": "The Zionist occupation aircraft are launching violent raids on Haidar Abdel Shafi roundabout, west of Gaza City, now.",
-        "cleaned_text": "Zionist occupation aircraft are conducting attacks at Haidar Abdel Shafi roundabout, located west of Gaza City.",
-        "channel": "gazaalanpa",
-        "date": "2025-07-28T23:03:37+00:00",
-        "locations": []
+        "cleaned_text": "Zionist occupation forces are launching airstrikes at Haidar Abdel Shafi roundabout in western Gaza City.",
+        "locations": [
+            "west Gaza City"
+        ]
     },
     {
         "text": "After their return from the front lines. Al-Qassam fighters confirmed targeting a \"Merkava\" tank tower with a Tandem shell east of Jabalia city in the northern Gaza Strip on 2025721",
-        "cleaned_text": "Al-Qassam fighters targeted a Merkava tank tower with a Tandem shell east of Jabalia city in the northern Gaza Strip on 2025, 2021.",
-        "channel": "abuobaidahenglish",
-        "date": "2025-07-27T15:54:37+00:00",
+        "cleaned_text": "Al-Qassam fighters targeted a \"Merkava\" tank tower with a tandem shell east of Jabalia city in the northern Gaza Strip on 2025721.",
         "locations": [
-            "East Jabalia"
+            "east Jabalia",
+            "north Gaza Strip"
         ]
     },
     {
         "text": "Al-Qassam Brigades target a Zionist troop carrier with a powerful landmine in the Abasan Al-Kabira area east of Khan Yunis city in the southern Gaza Strip",
-        "cleaned_text": "Al-Qassam Brigades targeted a Zionist troop carrier with a landmine in the Abasan Al-Kabira area, east of Khan Yunis city, in the southern Gaza Strip.",
-        "channel": "abuobaidahenglish",
-        "date": "2025-07-27T12:56:24+00:00",
+        "cleaned_text": "Al-Qassam Brigades targeted a Zionist troop carrier with a landmine in the Abasan Al-Kabira area, east of Khan Yunis city, in southern Gaza Strip.",
         "locations": [
-            "Southern Gaza Strip",
-            "Abasan al-Kabira",
-            "East Khan Yunis"
+            "Abasan Al-Kabira",
+            "east Khan Yunis",
+            "south Gaza Strip"
         ]
     },
     {
         "text": "Al-Qassam fighters, in cooperation with the Al-Quds Brigades fighters, managed to shell an enemy command and control site near the courts complex south of Khan Younis city in the southern Gaza Strip with several mortar shells",
-        "cleaned_text": "Al-Qassam fighters and Al-Quds Brigades cooperated to shell an enemy command site near Khan Younis city's courts complex in southern Gaza Strip using multiple mortar shells.",
-        "channel": "abuobaidahenglish",
-        "date": "2025-07-26T18:53:18+00:00",
+        "cleaned_text": "Al-Qassam and Al-Quds Brigades fighters shelled an enemy command and control site near a courts complex south of Khan Younis city in the southern Gaza Strip using several mortar shells.",
         "locations": [
-            "Southern Gaza Strip",
-            "Khan Yunis"
+            "south Gaza Strip"
         ]
     },
     {
         "text": "IDF: A short while ago, a terrorist hurled a brick toward IDF soldiers during an operational activity in Hebron. The soldiers fired toward the terrorist in order to remove the threat. The terrorist was neutralized, and no IDF injuries were reported.",
-        "cleaned_text": "A terrorist threw a brick at IDF soldiers during an operational activity in Hebron. Soldiers fired at the terrorist to neutralize the threat. The terrorist was neutralized and no IDF injuries were reported.",
-        "channel": "idfofficial",
-        "date": "2025-07-28T17:01:48+00:00",
+        "cleaned_text": "IDF soldiers encountered a brick-throwing terrorist in Hebron during an operational activity. Soldiers fired at the terrorist, neutralizing the threat. No IDF injuries were reported.",
         "locations": [
             "Hebron"
         ]
     },
     {
         "text": "IDF: Earlier today Sunday, an officer in the Desert Reconnaissance Battalion 585, and a reservist tracker in the Southern Brigade, Gaza Division, were severely injured during combat in the southern Gaza Strip. The officer and tracker were evacuated to a hospital to receive medical treatment, and their families have been notified.",
-        "cleaned_text": "On Sunday, an officer from Desert Reconnaissance Battalion 585 and a reservist tracker from the Southern Brigade, Gaza Division were severely injured during combat in southern Gaza Strip. Both individuals were evacuated to a hospital for treatment, and their families have been notified.",
-        "channel": "idfofficial",
-        "date": "2025-07-27T12:14:10+00:00",
+        "cleaned_text": "An officer from Desert Reconnaissance Battalion 585 and a reservist tracker from the Southern Brigade, Gaza Division, were severely injured in combat in the southern Gaza Strip today. They were evacuated to a hospital for medical treatment, and their families have been notified.",
         "locations": [
-            "Southern Gaza Strip"
-        ]
-    },
-    {
-        "text": "IDF: Troops of the 646th Reservist Brigade Dismantled a Terror Tunnel Route as Well as Hundreds of Terrorist Infrastructure Sites Both Above and Below Ground Troops from the 646th Brigade, under the command of the 99th Division, operated over the past three months in the areas of the Netzarim corridor, Shuja'iyya, Daraj Tuffah, and Beit Hanoun in the Gaza Strip. During the activities, the troops located and dismantled hundreds of terrorist infrastructure sites, including military structures, weapons storage facilities, and enemy firing and observation positions. In addition, approximately 400 terrorists were eliminated, as a result of cooperation between ground troops and the Israeli Air Force. In recent days, troops from the 646th Brigade and Yahalom unit dismantled a Hamas terror tunnel approximately 500 meters long in the Beit Hanoun area. The tunnel was located as part of an ongoing effort to locate and dismantle underground routes used by the Hamas terrorist organization. IDF troops continue to operate against terrorist organizations in the Gaza Strip in order to protect Israeli civilians. Attached are the following: Footage from within the Hamas terror tunnel in the Beit Hanoun area: Footage from the dismantling of the Hamas terror tunnel in the Beit Hanoun area: Photos of the activities of the 646th Brigade in the Gaza Strip:",
-        "cleaned_text": "IDF's 646th Reservist Brigade dismantled a terror tunnel route and hundreds of terrorist infrastructure sites above and below ground in Netzarim corridor, Shuja'iyya, Daraj Tuffah, and Beit Hanoun in the Gaza Strip over three months.",
-        "channel": "idfofficial",
-        "date": "2025-07-27T12:02:52+00:00",
-        "locations": [
-            "Shejaiya",
-            "Gaza Strip",
-            "Beit Hanoun"
+            "south Gaza Strip"
         ]
     },
     {
         "text": "IDF troops from the 646th Reservist Brigade dismantled a Hamas tunnel about 500 meters long in Beit Hanoun, as part of a months-long operation.",
-        "cleaned_text": "IDF's 646th Reservist Brigade dismantled a 500-meter long Hamas tunnel in Beit Hanoun, during an ongoing operation.",
-        "channel": "the_jerusalem_post",
-        "date": "2025-07-27T14:25:07+00:00",
+        "cleaned_text": "IDF troops from the 646th Reservist Brigade dismantled a 500-meter long Hamas tunnel in Beit Hanoun, as part of an ongoing operation.",
         "locations": [
             "Beit Hanoun"
         ]
+    },
+    {
+        "text": "About 92 martyrs in the occupation's targeting of the Gaza Strip, including 56 aid recipients.",
+        "cleaned_text": "There were approximately 92 casualties in the targeted area of the Gaza Strip, with 56 being aid recipients.",
+        "locations": [
+            "Gaza Strip"
+        ]
+    },
+    {
+        "text": "IDF: Following the sirens that sounded a short while ago regarding a hostile aircraft infiltration in Bnei Netzarim, a suspicious aerial target launched from Yemen was intercepted by the IAF.",
+        "cleaned_text": "IDF intercepted a suspicious aerial target launched from Yemen over Bnei Netzarim after sirens alerted of hostile aircraft infiltration. The IAF was involved in the interception process.",
+        "locations": [
+            "Yemen"
+        ]
+    },
+    {
+        "text": "IDF: Following the sirens that sounded a short while ago in the communities surrounding the Gaza Strip, a projectile that was launched from the southern Gaza Strip was most likely intercepted.",
+        "cleaned_text": "A projectile was launched from the southern Gaza Strip and is believed to have been intercepted after sirens were heard in nearby communities. The IDF is responsible for this information.",
+        "locations": [
+            "south Gaza Strip"
+        ]
+    },
+    {
+        "text": "IDF: Initial report - Sirens sounded in communities surrounding the Gaza Strip. The details are under review.",
+        "cleaned_text": "IDF sirens sounded in communities surrounding the Gaza Strip, with details still under review.",
+        "locations": [
+            "Gaza Strip"
+        ]
+    },
+    {
+        "text": "8 martyrs in an Israeli bombardment targeting people waiting for aid in the Zikim area, north of Gaza.",
+        "cleaned_text": "Israeli bombardment targeted people waiting for aid in the Zikim area, north of Gaza, resulting in 8 casualties.",
+        "locations": [
+            "Zikim",
+            "north Gaza"
+        ]
+    },
+    {
+        "text": "51 martir akibat tembakan pendudukan Israel di Jalur Gaza, termasuk 27 penerima bantuan.",
+        "cleaned_text": "51 civilians were killed in Israeli airstrikes along the Gaza Strip, including 27 aid recipients.",
+        "locations": [
+            "Gaza Strip"
+        ]
+    },
+    {
+        "text": "The Al-Qassam fighters, in cooperation with the Al-Quds Brigades fighters, managed to shell an enemy command and control site in the Moraj axis south of Khan Younis city in the southern Gaza Strip with a number of mortar shells",
+        "cleaned_text": "Al-Qassam fighters and Al-Quds Brigades cooperated to shell an enemy command site in the Moraj axis south of Khan Younis city in the southern Gaza Strip using mortar shells.",
+        "locations": [
+            "Moraj",
+            "south Gaza Strip"
+        ]
+    },
+    {
+        "text": "After their return from the front lines. Al-Qassam fighters confirmed the sniping of two Zionist soldiers and their direct injury near the Nazareth School on Baghdad Street in the Al-Shujaiya neighborhood east of Gaza City on 10-07-2025 AD",
+        "cleaned_text": "Al-Qassam fighters sniped and injured two Israeli soldiers near Nazareth School on Baghdad Street in the Al-Shujaiya neighborhood east of Gaza City on 10-07-2025.",
+        "locations": [
+            "Al-Shujaiya",
+            "east Gaza City"
+        ]
+    },
+    {
+        "text": "The Al-Qassam Brigades shell a gathering of enemy soldiers and vehicles with a number of mortar shells east of the Qarara area, east of Khan Yunis city, south of the Gaza Strip",
+        "cleaned_text": "Al-Qassam Brigades shelled a gathering of enemy soldiers and vehicles with mortar shells in the Qarara area, east of Khan Yunis city, south of the Gaza Strip.",
+        "locations": [
+            "east Khan Yunis",
+            "south Gaza Strip"
+        ]
+    },
+    {
+        "text": "IDF: A short while ago, the IDF struck infrastructure that was used for producing and storing strategic weapons in the Beqaa area and in southern Lebanon. Among the targets struck were explosive manufacturing sites, which were used to develop Hezbollah's weaponry, as well as an underground site for the production and storage of strategic weapons. The Hezbollah terrorist organization tried to rehabilitate the sites and capabilities, actions that constitute a violation of the understandings between Israel and Lebanon. The IDF will continue to operate in order to protect Israeli civilians.",
+        "cleaned_text": "IDF struck infrastructure used for producing and storing weapons in Beqaa area and southern Lebanon. Targets included explosive manufacturing sites and underground site for production and storage of strategic weapons, used by Hezbollah.",
+        "locations": [
+            "Beqaa",
+            "south Lebanon"
+        ]
+    },
+    {
+        "text": "The 98th Division has completed its mission in northern Gaza after weeks of fighting in Khan Yunis, Shejaiya and Zeitoun. Troops dismantled 1,500 terror sites and killed dozens of Hamas operatives, including some involved in the October 7 massacre.",
+        "cleaned_text": "The 98th Division completed its mission in northern Gaza, dismantling 1,500 terror sites and killing dozens of Hamas operatives, including some involved in the October 7 massacre.",
+        "locations": [
+            "north Gaza"
+        ]
+    },
+    {
+        "text": "A 15-year-old was shot in the back after a reservist fired at stone-throwers near the evacuated Tzur Harel outpost. He is conscious; military and police are investigating.",
+        "cleaned_text": "A 15-year-old was shot in the back after a reservist fired at stone-throwers near the evacuated Tzur Harel outpost. The teenager is conscious, and military and police are investigating.",
+        "locations": []
     }
 ]

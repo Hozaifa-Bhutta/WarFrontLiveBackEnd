@@ -1,5 +1,5 @@
 import requests
-def call_llm(user_prompt, system_prompt="", temperature=0.2, max_tokens=100):
+def call_llm(user_prompt, system_prompt="", temperature=0.2, max_tokens=3500):
     prompt = ""
     if system_prompt:
         prompt += f"System: {system_prompt.strip()}\n\n"
@@ -7,7 +7,7 @@ def call_llm(user_prompt, system_prompt="", temperature=0.2, max_tokens=100):
     prompt += f"User: {user_prompt.strip()}\n\nAssistant:"
 
     response = requests.post("http://localhost:11434/api/generate", json={
-        "model": "openchat",
+        "model": "openchat:latest",
         "prompt": prompt,
         "temperature": temperature,
         "max_tokens": max_tokens,
